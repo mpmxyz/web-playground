@@ -1,0 +1,42 @@
+[
+    {
+        "url": "/form/cases",
+        "method": ["get"],
+        "controller": {
+            "file": "cases",
+            "function": "cases"
+        }
+    },
+    {
+        "url": "/login",
+        "method": ["post"],
+        "controller": {
+            "file": "storage",
+            "function": "login"
+        }
+    },
+    {
+        "url": "/data/:key",
+        "method": ["post"],
+        "controller": {
+            "file": "storage",
+            "function": "write"
+        }
+    },
+    {
+        "url": "/data",
+        "method": ["get"],
+        "controller": {
+            "file": "storage",
+            "function": "read"
+        }
+    },
+    {
+        "url": "*",
+        "static": "/public/*"
+    },
+    {
+        "url": "*",
+        "page": "*"
+    }
+]

@@ -1,0 +1,15 @@
+{
+	"name": "web-playground",
+	"version": "1.0.0",
+	"description": "a server testing fhw-web library",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"keywords": [],
+	"author": "mpmxyz",
+	"license": "MIT",
+	"dependencies": {
+		"fhw-web": "^1.1.5"
+	}
+}

@@ -1,0 +1,11 @@
+---
+{
+    "template": "html-template"
+}
+---
+<a href="/">&lt;back</a><br/>
+Current value: {{page.value}}
+<form action="/data/{{page.key}}" method="post">
+    <label>New Value: <input type="text" name="value"/></label>
+    <button type="submit">Change!</button>
+</form>

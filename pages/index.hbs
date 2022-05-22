@@ -1,0 +1,22 @@
+---
+{
+    "template": "html-template"
+}
+---
+<p>
+    {{#if session.user}}
+        Hello, {{session.user}}!
+    {{/if}}
+</p>
+<form method="get" action="/cases">
+    <label>Text: <input type="text" name="text" placeholder="Type something..."/></label>
+    <button type="submit">Submit!</button>
+</form>
+<form method="post" action="/login">
+    <label>User: <input required type="text" name="user" placeholder="username"/></label>
+    <button type="submit">Login!</button>
+</form>
+<br/>
+This will not work unless logged in:<br/>
+{{include "view-data"}}
+
